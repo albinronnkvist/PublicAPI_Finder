@@ -3,7 +3,6 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { purple, grey } from '@mui/material/colors';
-import './styles/index.css';
 
 const theme = createTheme({
   palette: {
@@ -40,7 +39,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <div className="content">
             <Routes>
