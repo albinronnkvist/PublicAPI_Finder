@@ -288,7 +288,7 @@ export default function Home() {
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             User interface created by <a href="https://www.albinronnkvist.me/en-US" target="_blank" rel="noreferrer">Albin Rönnkvist</a>, 
-            &nbsp;<a href="https://www.albinronnkvist.me/en-US" target="_blank" rel="noreferrer">(view code)</a>.
+            &nbsp;<a href="https://github.com/albinronnkvist/PublicAPI_Finder" target="_blank" rel="noreferrer">(view code)</a>.
             
             <br/>
             Data retrieved from: <a href="https://github.com/davemachado/public-api" target="_blank" rel="noreferrer">https://github.com/davemachado/public-api</a>.
