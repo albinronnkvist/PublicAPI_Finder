@@ -127,6 +127,9 @@ export default function Home() {
         setApis(data.entries)
         setCount(data.count)
       })
+      .catch(err => {
+        console.log(err)
+      })
 
     fetch(`https://api.publicapis.org/categories`)
       .then(res => {
@@ -134,6 +137,9 @@ export default function Home() {
       })
       .then(data => {
         setCategories(data)
+      })
+      .catch(err => {
+        console.log(err)
       })
   }, [])
 
@@ -210,7 +216,7 @@ export default function Home() {
         </Typography>
         <List>
           {categories ? (
-            categories.map((category, index) => (
+            categories.categories.map((category, index) => (
               <ListItem 
                 button 
                 key={index}

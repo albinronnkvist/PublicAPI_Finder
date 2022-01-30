@@ -113,7 +113,7 @@ function ApiList({apis, count}) {
       ) : (
         count === 0 ? (
           <Box sx={{ textAlign: 'center'}}>
-            <img src='/images/empty.svg' alt='empty' />
+            <img src={`${process.env.PUBLIC_URL}/images/empty.svg`} alt='empty' />
             <Typography variant="h5" component="h4">No results...</Typography>
             <Typography>Try searching for something else</Typography>
           </Box>
